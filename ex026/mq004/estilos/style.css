@@ -22,6 +22,7 @@ body {
 
 }
 
+
 main {
     background-color: white;
     width: 98vw;
@@ -44,6 +45,6 @@ img {
 
 img#phone { display: block;}
 img#tablete { display: none;}
-img#impressora {display: none;}
-img#desktop {display: none;}
+img#print {display: none;}
+img#pc {display: none;}
 img#TV {display: none;}

@@ -11,6 +11,40 @@ Grandes Telas: 1200px acima
 */
 @media print {
 
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        text-align: center;
+    }
+    main::after {
+        
+        content: 'Teste de imagens de impressão';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablete { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+
 } /*impressora*/
  
 @media screen and (max-width: 768px) and (max-width: 992px) {
@@ -25,7 +59,7 @@ Grandes Telas: 1200px acima
     img#tv { display: none; }
 }/* TABLET*/
 
-@media screen and (min-width: 768px) and (max-width:1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     body{
         background-image: url(../imagens/back-pc.jpg);
     }
@@ -36,7 +70,7 @@ Grandes Telas: 1200px acima
     img#tv { display: none; }
 }/* DESKTOP */
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width:992px) and (min-width: 1200px) { 
     body{
         background-image: url(../imagens/back-tv.jpg);
     }
@@ -44,5 +78,5 @@ Grandes Telas: 1200px acima
     img#tablete { display: none; }
     img#print { display: none; }
     img#pc { display: none; }
-    img#tv { display: block; }
+    img#TV { display: block; }
 }/*TELAS GRANDES*/
